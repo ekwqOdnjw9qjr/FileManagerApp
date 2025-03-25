@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Кнопка "Назад" -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        app:cornerRadius="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"> <!-- отступ от кнопки "Назад" -->
+
+    <!-- Кнопка для перехода к созданию записи -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCreateNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="Создать запись"
+        app:cornerRadius="8dp" />
+
+    <!-- Кнопка для перехода к чтению файла -->
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnReadFile"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:text="Прочесть файл"-->
+<!--        app:cornerRadius="8dp" />-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSelectFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Выбрать файл для чтения"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
