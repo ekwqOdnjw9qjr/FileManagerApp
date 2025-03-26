@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">FileManagerApp</string>
+    <string name="permission_required_title">Требуется разрешение</string>
+    <string name="permission_required_message">Для работы приложения необходим доступ ко всем файлам. Без этого разрешения вы не сможете использовать приложение. Предоставить разрешение?</string>
+    <string name="permission_not_granted_title">Разрешение не предоставлено</string>
+    <string name="permission_not_granted_message">Вы не предоставили доступ ко всем файлам. Без этого разрешения приложение не может работать. Хотите попробовать снова?</string>
+    <string name="permission_granted">Разрешение получено</string>
+    <string name="permission_denied">Разрешение отклонено. Приложение будет закрыто.</string>
+    <string name="permission_required_toast">Требуется разрешение для работы с файлами</string>
+    <string name="file_read_error">Ошибка чтения файла</string>
+    <string name="button_yes">Да</string>
+    <string name="button_no">Нет</string>
+
+    <string name="input_text">Введите текст</string>
+    <string name="file_save">Файл сохранён</string>
+    <string name="file_save_error">Ошибка сохранения файла</string>
+
+    <string name="file_saved_success">Файл успешно сохранён</string>
+    <string name="file_name_empty_error">Имя файла не может быть пустым</string>
+    <string name="file_rename_error">Не удалось переименовать файл</string>
+    <string name="file_renamed_success">Файл успешно переименован</string>
+
+    <string name="button_save_content">Сохранить содержимое</string>
+    <string name="button_rename_file">Переименовать файл</string>
+    <string name="file_name_hint">Введите новое имя файла</string>
+
+    <string name="create_note">Создать запись</string>
+    <string name="select_file">Выбрать файл для чтения</string>
+    <string name="placeholder_text">Выберите действие из меню</string>
+
+
 </resources>

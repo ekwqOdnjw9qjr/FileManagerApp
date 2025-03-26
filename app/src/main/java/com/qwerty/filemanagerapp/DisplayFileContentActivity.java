@@ -21,7 +21,6 @@ public class DisplayFileContentActivity extends AppCompatActivity {
 
         tvFileContent.setMovementMethod(new ScrollingMovementMethod());
 
-        // Получаем содержимое файла из Intent
         String fileContent = getIntent().getStringExtra("fileContent");
         if (fileContent != null) {
             tvFileContent.setText(fileContent);
@@ -29,7 +28,6 @@ public class DisplayFileContentActivity extends AppCompatActivity {
             tvFileContent.setText("Не удалось загрузить содержимое файла");
         }
 
-        // Обработка кнопки "Назад"
         btnBack.setOnClickListener(v -> onBackPressed());
     }
 }

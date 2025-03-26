@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Кнопка "Назад" -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
@@ -18,9 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center"> <!-- отступ от кнопки "Назад" -->
+        android:gravity="center">
 
-    <!-- Кнопка для перехода к созданию записи -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnCreateNote"
         android:layout_width="match_parent"
@@ -30,21 +28,12 @@
         android:text="Создать запись"
         app:cornerRadius="8dp" />
 
-    <!-- Кнопка для перехода к чтению файла -->
-<!--    <com.google.android.material.button.MaterialButton-->
-<!--        android:id="@+id/btnReadFile"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginBottom="16dp"-->
-<!--        android:text="Прочесть файл"-->
-<!--        app:cornerRadius="8dp" />-->
-
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSelectFile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Выбрать файл для чтения"
+            android:text="Открыть файл"
             app:cornerRadius="8dp" />
     </LinearLayout>
 

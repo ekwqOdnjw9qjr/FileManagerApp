@@ -1,9 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.qwerty.filemanagerapp">
 
-    <!-- Разрешения для чтения и записи в хранилище (опционально для SAF) -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,9 +13,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.FileManagerApp">
-        <activity android:name=".DisplayFileContentActivity" />
-        <activity android:name=".CreateNoteActivity" />
+        <activity android:name=".DisplayFileContentActivity"
+            android:exported="false" />
+        <activity android:name=".CreateNoteActivity"
+            android:exported="false" />
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -22,4 +27,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
